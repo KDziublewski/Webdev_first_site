@@ -1,0 +1,141 @@
+body {
+  font: normal .80em 'trebuchet ms', arial, sans-serif;
+  background: #F0EFE2 url(background.jpg) repeat;
+  color: #FFF;
+  margin: 0 0 0 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(5 auto);
+  justify-content: space-evenly;
+}
+
+header {
+  display: grid;
+  background: #CC5543;
+  grid-column: 1/3;
+}
+
+h1 a{
+  font-family: Gotu, Arial, Helvetica, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+h2 {
+  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  background-color: rgb(151, 52, 36);
+  padding-left: 5px;
+}
+
+h3 {
+  font-family: Gotu, Arial, Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+#navbar {
+  display: grid;
+  grid-column: 1/3;
+}
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(235, 222, 208);
+}
+
+.button {
+  float: left;
+}
+
+.button a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button a:hover {
+  background-color: #EDB579;
+}
+
+.active {
+  background-color: #CC5543;
+  color: white;
+}
+
+.content {
+  display: grid;
+  grid-column: 1/3;
+}
+
+.content-text {
+  background-color: #f4f4f4;
+  font-family: PT Sans Narrow, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.entry {
+  grid-column: 1/3;
+  padding: 10px;
+  margin: 10px;
+  justify-self: center;
+  border-radius: 5px;
+}
+
+.entry-left {
+  grid-column: 1/2;
+  padding: 10px;
+  margin: 10px;
+  justify-self: center;
+}
+
+.entry-right {
+  grid-column: 2/3;
+  padding: 10px;
+  margin: 10px;
+  justify-self: center;
+}
+
+.hedge-pic {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  border: #CC5543;
+  border-radius: 5%;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 15px;
+  margin: 15px;
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+footer {
+  background: #000;
+  font-size: 6px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
